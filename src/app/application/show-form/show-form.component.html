@@ -1,0 +1,42 @@
+<div class="container-fluid pt-5 text-dark" style="min-height:90vh;background-color:antiquewhite;">
+
+    <form>
+        <div class="col-8 mx-auto">
+            <h1 class="pb-3 mx-auto" style="font-size: 5vh;"><ins>Envoyez nous votre CV !</ins></h1>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="fullName">Nom Complet</label>
+                    <input type="text" class="form-control" name="fullName" id="fullName" [(ngModel)]="cv.fullName" disabled>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="naissance">Naissance
+                    </label>
+                    <input type="text" class="form-control" name="naissance" id="naissance" [(ngModel)]="cv.naissance" disabled>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="diplome">Diplome</label>
+                    <select id="inputState" class="form-control" name="diplome" [(ngModel)]="cv.diplome" disabled>
+                        <option>Math</option>
+                        <option>Informatique</option>
+                        <option>3D Design</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" [(ngModel)]="cv.email" disabled>
+            </div>
+            <div class="form-check pb-3">
+                <input class="form-check-input" type="checkbox" name="permisConduire" id="permisConduire" [(ngModel)]="cv.permisConduire" disabled>
+                <label class="form-check-label" for="permisConduire">
+                    Detient un permis de conduire
+                </label>
+            </div>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-lg pl-4 pr-4 btn-success mx-4 mb-5 mg-5" [routerLink]="['/home']">Go Home</a>
+            <a class="btn btn-lg pl-4 pr-4 btn-danger mx-4 mb-5 mg-5" [routerLink]="['/crud']">Go Back</a>
+        </div>
+    </form>
+</div>

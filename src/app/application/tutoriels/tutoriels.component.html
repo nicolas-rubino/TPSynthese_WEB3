@@ -1,0 +1,28 @@
+<div class="container" style="margin-bottom: 200px;" >
+    <div class="row">
+        <div class="col-12 text-center" style="overflow: hidden; width:100%; min-width:300px;">
+            <ng-container [ngSwitch]="theorieId">
+                <ng-container *ngSwitchCase="1">
+                    <h1 class="display-3"> THEORIE COURS WEB 1 ( html + css )</h1>
+                    <br>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src='https://nicolas-rubino.github.io/WEB_1_THEORIE/index.html'></iframe>
+                      </div>
+                </ng-container>
+                <ng-container *ngSwitchCase="2">
+                    <h1 class="display-3">THEORIE COURS WEB 2 ( bootstrap + javascript )</h1>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src='https://nicolas-rubino.github.io/WEB_2_THEORIE/index.html'></iframe>
+                      </div>
+                </ng-container>
+                <ng-container *ngSwitchCase="3">
+                    <h1 class="display-3">THEORIE COURS WEB 3</h1>
+                    <br>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src='https://nicolas-rubino.github.io/TP1_WEB/src/index.html'></iframe>
+                      </div>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</div>

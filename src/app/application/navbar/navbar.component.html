@@ -1,0 +1,37 @@
+<header>
+    <nav class="navbar navbar-expand-md bg-warning ">
+        <a routerLink="home" class="navbar-brand font-weight-bold font-italic text-dark pl-3" style="font-size: 30px;">
+            <i class="fas fa-user-astronaut fa-2x pr-3"></i>
+            RUBINO
+        </a>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+            <span class="fas fa-bars fa-2x text-muted"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between " id="nav">
+            <ul class="navbar-nav text-uppercase ml-auto text-dark font-weight-bold">
+                <li class="nav-item px-1 py-1"><a class="btn btn-outline-dark" routerLink="home">home</a></li>
+                <li class="nav-item px-1 py-1">
+                    <div class="dropdown">
+                        <a class="btn btn-outline-dark  dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            tutoriel
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item"[routerLink]="['/tutoriel',1]">tuto 1</a>
+                            <a class="dropdown-item" [routerLink]="['/tutoriel',2]">tuto 2</a>
+                            <a class="dropdown-item" [routerLink]="['/tutoriel',3]">tuto 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item px-1 py-1"><a class="btn btn-outline-dark" routerLink="formulaire">formulaire</a>
+                </li>
+                <li class="nav-item px-1 py-1"><a class="btn btn-outline-dark" routerLink="crud">crud</a>
+                </li>
+                <li class="nav-item px-1 py-1"><a class="btn btn-outline-dark" routerLink="fun">fun</a>
+                </li>
+                <li class="nav-item px-1 py-1"><a class="btn btn-outline-dark" routerLink="contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

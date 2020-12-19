@@ -1,0 +1,45 @@
+<div class="container-fluid pt-5 text-dark" style="min-height:90vh;background-color:antiquewhite;">
+    <form [formGroup]="cvForm" (ngSubmit)="submitUpdate()">
+        <div class="col-8 mx-auto">
+            <h1 class="pb-3 mx-auto" style="font-size: 5vh;"><ins>Envoyez nous votre CV !</ins></h1>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="fullName">Nom Complet</label>
+                    <input type="text" class="form-control" name="fullName" id="fullName" formControlName="fullName">
+                    <div class="text-danger" *ngIf="fullName.invalid && fullName.touched"> Minimum 4 caracteres</div>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="naissance">Naissance
+                    </label>
+                    <input  type="text" class="form-control" name="naissance" id="naissance" formControlName="naissance">
+                    <div class="text-danger" *ngIf="naissance.invalid && naissance.touched">Entre 1920 et 2020</div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="diplome">Diplome</label>
+                    <select id="inputState" class="form-control" name="diplome" formControlName="diplome">
+                        <option disabled selected>Choose...</option>
+                        <option>Math</option>
+                        <option>Informatique</option>
+                        <option>3D Design</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" formControlName="email">
+                <div class="text-danger" *ngIf="email.invalid && email.touched">Email invalide</div>
+            </div>
+            <div class="form-check pb-3">
+                <input class="form-check-input" type="checkbox" name="permisConduire" id="permisConduire"
+                    formControlName="permisConduire">
+                <label class="form-check-label" for="permisConduire">
+                    Detient un permis de conduire
+                </label>
+            </div>
+        </div>
+        <div class="col-8 mx-auto my-auto">
+            <button type="submit" class="btn btn-lg pl-4 pr-4 btn-danger mb-5 mg-5">Send</button>
+        </div>
+    </form>
+</div>

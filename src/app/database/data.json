@@ -1,0 +1,36 @@
+{
+  "CRUD_CV": [
+    {
+      "fullName": "nicolas rubino",
+      "naissance": "2001",
+      "diplome": "3D Design",
+      "email": "nicolasrubino15@gmail.com",
+      "permisConduire": false,
+      "id": 0
+    },
+    {
+      "fullName": "tata",
+      "naissance": 2001,
+      "diplome": "Informatique",
+      "email": "String",
+      "permisConduire": false,
+      "id": 1
+    },
+    {
+      "fullName": "tete",
+      "naissance": 2003,
+      "diplome": "Math",
+      "email": "String",
+      "permisConduire": true,
+      "id": 2
+    },
+    {
+      "fullName": "nicnic nci",
+      "naissance": "2005",
+      "diplome": "Informatique",
+      "email": "nicolasrubino15@gmail.com",
+      "permisConduire": true,
+      "id": 4
+    }
+  ]
+}
